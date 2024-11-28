@@ -1,0 +1,28 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Task1
+{
+    abstract class Animal
+    {
+        public abstract string AnimalBreed { get; set; }
+        
+
+        public Animal (string animalBreed)
+        {
+            AnimalBreed = animalBreed;
+        }
+        
+        public abstract void Say();
+
+        public void ShowInfo()
+        {
+            Console.WriteLine(AnimalBreed);
+            Say();
+        }
+
+    }
+}
